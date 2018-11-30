@@ -1,0 +1,223 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+
+{
+  "name": "Strength",
+  "children": [
+    {
+      "hero": "BREWMASTER",
+      "introduction":"Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie...",
+      "name": "Strength",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "Sven",
+      "introduction":"",
+      "name": "Strength",
+      "introduction":"Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins...",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "Tiny",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "Kunkka",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "BeastMaster",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "DragonKnight",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "ClockWerk",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "OMNIKNIGHT",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "HUSKAR",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    },
+    {
+      "hero": "ALCHEMIST",
+      "name": "Strength",
+      "introduction":"",
+      "link": "",
+      "img":"",
+      "attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+      "point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+      "size": 20000
+    }
+  ]
+},
+{
+"name": "Strength",
+"children": [
+{
+"hero": "BREWMASTER",
+"introduction":"Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie...",
+"name": "Strength",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "Sven",
+"introduction":"",
+"name": "Strength",
+"introduction":"Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins...",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "Tiny",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "Kunkka",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "BeastMaster",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "DragonKnight",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "ClockWerk",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "OMNIKNIGHT",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "HUSKAR",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+},
+{
+"hero": "ALCHEMIST",
+"name": "Strength",
+"introduction":"",
+"link": "",
+"img":"",
+"attr":{"picks": "53", "pick_win": "0.5849", "ban": "24", "ban_win": "0.4167", "combined": "77", "combined_win": "0.5325", "RVD": "0.6226", "GPM": "306", "XPM": "418", "KDA": "3.43"},
+"point":{"DPS":,"support":,"Push":,"gank":,"tank":,"group":},
+"size": 20000
+}
+]
+}

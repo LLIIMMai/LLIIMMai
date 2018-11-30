@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.css">
+    
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+    
+    <style>
+        .radar-chart .area {
+            fill-opacity: 0.7;
+        }
+        .radar-chart.focus .area {
+            fill-opacity: 0.3;
+        }
+        .radar-chart.focus .area.focused {
+            fill-opacity: 0.9;
+        }
+        .area.max, .max .circle {
+            fill: #a9e9ff;
+            stroke: none;
+        }
+        .area.average, .average .circle {
+            fill: #e64a77;
+            stroke: none;
+        }
+    </style>
+    <script src="http://d3js.org/d3.v5.js"></script>
+    <script src="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.js"></script>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="5" id='name'>Name</td>
+            <td colspan="4">Infomation</td>
+            <td colspan="3">Team Select</td>
+        </tr>
+        <tr>
+            <td rowspan="6" colspan="5" id='pic'></td>
+            <td>Player 1:</td>
+            <td id='Player1'></td>
+            <td>Location:</td>
+            <td id='Location'></td>
+            <td id='vp'></td>
+            <td id='tl'></td>
+            <td id='lgd'></td>
+        </tr>
+        <tr>
+            <td>Player 2:</td>
+            <td id='Player2'></td>
+            <td>Region:</td>
+            <td id='Region'></td>
+            <td id='se'></td>
+            <td id='og'></td>
+            <td id='eg'></td>
+        </tr>
+        <tr>
+            <td>Player 3:</td>
+            <td id='Player3'></td>
+            <td>Manager:</td>
+            <td id='Manager'></td>
+            <td id='op'></td>
+            <td id='vgjs'></td>
+            <td id='mn'></td>
+        </tr>
+        <tr>
+            <td>Player 4:</td>
+            <td id='Player4'></td>
+            <td>Caption:</td>
+            <td id='Caption'></td>
+            <td id='ts'></td>
+            <td id='vg'></td>
+            <td id='ws'></td>
+        </tr>
+        <tr>
+            <td>Player 5:</td>
+            <td id='Player5'></td>
+            <td>Total Earnings:</td>
+            <td id='Total_Earnings'></td>
+            <td id='fn'></td>
+            <td id='nb'></td>
+            <td id='tnc'></td>
+        </tr>
+        <tr>
+            <td>Coach:</td>
+            <td id='Coach'></td>
+            <td>Pro Circuit Rank:</td>
+            <td id='Pro_Circuit_Rank'></td>
+            <td id='vgjt'></td>
+            <td id='ig'></td>
+            <td id='pg'></td>
+        </tr>
+        <tr>
+            <td colspan="2" id='team_radar_name'>Team Radar</td>
+            <td colspan="2" id='player1_radar_name'>Player1 Radar</td>
+            <td colspan="2" id='player2_radar_name'>Player2 Radar</td>
+            <td colspan="2" id='player3_radar_name'>Player3 Radar</td>
+            <td colspan="2" id='player4_radar_name'>Player4 Radar</td>
+            <td colspan="2" id='player5_radar_name'>Player5 Radar</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2" id='team_radar'>1</td>
+            <td rowspan="2" colspan="2" id='player1_radar'>2</td>
+            <td rowspan="2" colspan="2" id='player2_radar'>3</td>
+            <td rowspan="2" colspan="2" id='player3_radar'>4</td>
+            <td rowspan="2" colspan="2" id='player4_radar'>5</td>
+            <td rowspan="2" colspan="2" id='player5_radar'>6</td>
+        </tr>
+        <tr></tr>
+    </table>
+    
+    <script>
+    
+    d3.csv('Players.csv').then(Data=>{
+        let width=45;
+        function updateRadar(location,name){
+            
+        };
+
+
+    d3.csv('Teams.csv').then(data=>{
+        
+        data.map(da=>{
+            let id=da.id;
+            let name=da.Name;
+            let name_=name.replace(/ /g,'_');
+           
+            d3.select('#'+id).append('svg').attr('width',width).attr('height',width)
+            .append('image')
+            .attr('href','figs/'+name_+'.png')
+            .attr('width',width).attr('height',width)
+            .datum(da)
+            .on('click',d=>updateTable(d.id));
+        });
+        function updateTable(id){
+            let a=data.filter(function(d){return d.id==id;});
+            for(let i=1;i<=5;i++){
+                document.getElementById('Player'+i.toString()).innerHTML='';
+                document.getElementById('Player'+i.toString()).appendChild(document.createTextNode(a[0]['Player'+i.toString()].toString()));
+                document.getElementById('player'+i.toString()+'_radar_name').innerHTML='';
+                document.getElementById('player'+i.toString()+'_radar_name').appendChild(document.createTextNode(a[0]['Player'+i.toString()].toString()));
+                
+            }
+            document.getElementById('Coach').innerHTML='';
+            document.getElementById('Coach').appendChild(document.createTextNode(a[0]['Coach'].toString()));
+            document.getElementById('name').innerHTML='';
+            document.getElementById('name').appendChild(document.createTextNode(a[0]['Name'].toString()));
+            document.getElementById('team_radar_name').innerHTML='';
+            document.getElementById('team_radar_name').appendChild(document.createTextNode(a[0]['Name'].toString()));
+            document.getElementById('Coach').innerHTML='';
+            document.getElementById('Coach').appendChild(document.createTextNode(a[0]['Coach'].toString()));
+            document.getElementById('Location').innerHTML='';
+            document.getElementById('Location').appendChild(document.createTextNode(a[0]['Location'].toString()));
+            document.getElementById('Region').innerHTML='';
+            document.getElementById('Region').appendChild(document.createTextNode(a[0]['Region'].toString()));
+            document.getElementById('Manager').innerHTML='';
+            document.getElementById('Manager').appendChild(document.createTextNode(a[0]['Manager'].toString()));
+            document.getElementById('Caption').innerHTML='';
+            document.getElementById('Caption').appendChild(document.createTextNode(a[0]['Caption'].toString()));
+            document.getElementById('Total_Earnings').innerHTML='';
+            document.getElementById('Total_Earnings').appendChild(document.createTextNode(a[0]['Total_Earnings'].toString()));
+            document.getElementById('Pro_Circuit_Rank').innerHTML='';
+            document.getElementById('Pro_Circuit_Rank').appendChild(document.createTextNode(a[0]['Pro_Circuit_Rank'].toString()));
+            document.getElementById('pic').innerHTML='';
+            let img=document.createElement('img');
+            img.setAttribute('src','figs/'+a[0]['Name'].replace(/ /g,'_')+'.png');
+            img.setAttribute('width',width*4);
+            //img.setAttribute('height',width*6*0.8);
+            img.setAttribute('title',a[0]['Name']);
+            document.getElementById('pic').appendChild(img);
+            updateRadar('team_radar',a[0]['Name']);
+            updateRadar('team_radar',a[0]['Player1']);
+            updateRadar('team_radar',a[0]['Player2']);
+            updateRadar('team_radar',a[0]['Player3']);
+            updateRadar('team_radar',a[0]['Player4']);
+            updateRadar('team_radar',a[0]['Player5']);
+        }
+
+    });
+    });
+    </script>
+</body>
+</html>
+
+
+
+
